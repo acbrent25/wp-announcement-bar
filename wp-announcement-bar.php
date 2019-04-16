@@ -15,4 +15,7 @@ Auther URI: https://adamchampagne.com/
  // Load Scripts
  require_once(plugin_dir_path(__FILE__) . '/includes/wp-announcement-bar-scripts.php');
 
+  // Load Setting
+  require_once(plugin_dir_path(__FILE__) . '/includes/wp-announcement-bar-settings.php');
+
 
