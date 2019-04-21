@@ -31,7 +31,7 @@ function wpab_options_content(){
                                 <label for="wpab_settings[announcement_txt]"><?php _e('Announcement Bar Text', 'wpab_domain'); ?></label>
                             </th>
                             <td>
-                                <input type="text" name="wpab_settings[announcement_txt]" id="wpab_settings[announcement_txt]" value="<?php echo $wpab_options['announcement_txt']; ?>" class="regular-text" placeholder="">
+                                <input type="text" name="wpab_settings[announcement_txt]" id="wpab_settings[announcement_txt]" value="<?php echo isset($wpab_options['announcement_txt']) ? $wpab_options['announcement_txt'] : 'Announcement Bar' ; ?>" class="regular-text" placeholder="">
                                 <p class="description"> <?php _e('Enter the Text for Announcement Bar', 'wpab_domain'); ?> </p>
                             </td>
                         </tr>
@@ -41,7 +41,7 @@ function wpab_options_content(){
                                 <label for="wpab_settings[bg_color]"><?php _e('Background Color', 'wpab_domain'); ?></label>
                             </th>
                             <td>
-                                <input type="text" name="wpab_settings[bg_color]" id="wpab_settings[bg_color]" value="<?php echo $wpab_options['bg_color']; ?>" class="regular-text" placeholder="">
+                                <input type="text" name="wpab_settings[bg_color]" id="wpab_settings[bg_color]" value="<?php echo isset($wpab_options['bg_color']) ? $wpab_options['bg_color'] : ''; ?>" class="regular-text" placeholder="">
                                 <p class="description"> <?php _e('Enter a Color or Hex Value #', 'wpab_domain'); ?> </p>
                             </td>
                         </tr>
@@ -51,7 +51,7 @@ function wpab_options_content(){
                                 <label for="wpab_settings[txt_color]"><?php _e('Text Color', 'wpab_domain'); ?></label>
                             </th>
                             <td>
-                                <input type="text" name="wpab_settings[txt_color]" id="wpab_settings[txt_color]" value="<?php echo $wpab_options['txt_color']; ?>" class="regular-text" placeholder="">
+                                <input type="text" name="wpab_settings[txt_color]" id="wpab_settings[txt_color]" value="<?php echo isset($wpab_options['txt_color']) ? $wpab_options['txt_color'] : ''; ?>" class="regular-text" placeholder="">
                                 <p class="description"> <?php _e('Enter a Color or Hex Value #', 'wpab_domain'); ?> </p>
                             </td>
                         </tr>
