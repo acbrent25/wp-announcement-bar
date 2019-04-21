@@ -13,14 +13,28 @@ function wpab_add_scripts(){
         wp_enqueue_script('wpab-main-script', plugins_url() . '/wp-announcement-bar/js/main.js');
 
         // Get options for JS
-        $wpab_announcement_text = $wpab_options['announcement_text'];
-        $wpab_background_color  = $wpab_options['background_color'];
-        $wpab_font_color  = $wpab_options['font_color'];
+        // Text Options
+        $wpab_announcement_txt = $wpab_options['announcement_txt'];
+        $wpab_bg_color  = $wpab_options['bg_color'];
+        $wpab_txt_color  = $wpab_options['txt_color'];
+        // Button Options
+        $wpab_btn  = $wpab_options['btn'];
+        $wpab_btn_color  = $wpab_options['btn_color'];
+        $wpab_btn_txt  = $wpab_options['btn_txt'];
+        $wpab_btn_txt_color  = $wpab_options['btn_txt_color'];
+        $wpab_btn_link  = $wpab_options['btn_link'];
 
         $wpab_settings = array(
-            'text'              => $wpab_announcement_text,
-            'background_color'  => $wpab_background_color,
-            'font_color'  => $wpab_font_color,
+            // Text Options
+            'txt'               => $wpab_announcement_txt,
+            'bg_color'          => $wpab_bg_color,
+            'txt_color'         => $wpab_txt_color,
+            // Button Options
+            'btn'               => $wpab_btn,
+            'btn_color'         => $wpab_btn_color,
+            'btn_txt'           => $wpab_btn_txt,
+            'btn_txt_color'     => $wpab_btn_txt_color,
+            'btn_link'          => $wpab_btn_link,
         );
 
         // sending the options to the js file
