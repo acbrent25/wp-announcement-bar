@@ -10,3 +10,9 @@
 .logged-in #wpab-topbar {
     margin-top: 32px;
 }
+
+#wpab_btn {
+    border-radius: 3px;
+    padding: 8px 12px;
+    margin-left: 16px;
+}

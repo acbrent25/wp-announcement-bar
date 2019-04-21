@@ -5,6 +5,7 @@ jQuery(document).ready(function($){
     
     // Get Options
     // Text Options
+    var height = wpab_settings.height;
     var bg_color = wpab_settings.bg_color;
     var txt = wpab_settings.txt;
     var txt_color = wpab_settings.txt_color;
@@ -29,14 +30,20 @@ jQuery(document).ready(function($){
             'text': txt,
         }).prependTo('body');
 
-        var wpab_btn = $("<a />", {
-            'text': btn_txt,
-            'css' : {
-                'background-color': btn_color,
-                'color': btn_txt_color,
-            },
-            'href': btn_link,
-        }).appendTo(wpab_bar);
+        if(btn == 'enabled'){
+            var wpab_btn = $("<a />", {
+                'id' : 'wpab_btn',
+                'text': btn_txt,
+                'css' : {
+                    'background-color': btn_color,
+                    'color': btn_txt_color,
+                    'line-height' : height,
+                },
+                'href': btn_link,
+                'target': '_blank',
+            }).appendTo(wpab_bar);
+        }
+        
 
 
 

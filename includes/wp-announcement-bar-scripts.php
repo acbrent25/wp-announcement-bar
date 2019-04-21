@@ -18,14 +18,20 @@ function wpab_add_scripts(){
         $wpab_bg_color  = $wpab_options['bg_color'];
         $wpab_txt_color  = $wpab_options['txt_color'];
         // Button Options
-        $wpab_btn  = $wpab_options['btn'];
+        if(isset($wpab_options['btn'])){
+            $wpab_btn  = 'enabled';
+        } else {
+            $wpab_btn = 'not_enabled';
+        }
         $wpab_btn_color  = $wpab_options['btn_color'];
         $wpab_btn_txt  = $wpab_options['btn_txt'];
         $wpab_btn_txt_color  = $wpab_options['btn_txt_color'];
         $wpab_btn_link  = $wpab_options['btn_link'];
+        $wpab_height  = $wpab_options['wpab_height'];
 
         $wpab_settings = array(
             // Text Options
+            'height'            => $wpab_height,
             'txt'               => $wpab_announcement_txt,
             'bg_color'          => $wpab_bg_color,
             'txt_color'         => $wpab_txt_color,

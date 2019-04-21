@@ -25,7 +25,17 @@ function wpab_options_content(){
                                 <input type="checkbox" name="wpab_settings[enable]" id="wpab_settings[enable]" value="1" <?php checked(isset($wpab_options['enable'])); ?>>
                             </td>
                         </tr>
-                        <!-- Input -->
+                        <!-- Height -->
+                        <tr>
+                            <th scope="row">
+                                <label for="wpab_settings[wpab_height]"><?php _e('Announcement Bar Height', 'wpab_domain'); ?></label>
+                            </th>
+                            <td>
+                                <input type="text" name="wpab_settings[wpab_height]" id="wpab_settings[wpab_height]" value="<?php echo isset($wpab_options['wpab_height']) ? $wpab_options['wpab_height'] : '' ; ?>" class="regular-text" placeholder="">
+                                <p class="description"> <?php _e('Enter line-height', 'wpab_domain'); ?> </p>
+                            </td>
+                        </tr>
+                        <!-- Text -->
                         <tr>
                             <th scope="row">
                                 <label for="wpab_settings[announcement_txt]"><?php _e('Announcement Bar Text', 'wpab_domain'); ?></label>
