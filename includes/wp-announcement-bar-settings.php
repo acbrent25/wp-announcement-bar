@@ -1,14 +1,5 @@
 <?php
-// Create menu Link in admin
-function wpab_options_menu_link(){
-    add_options_page(
-        'WP Announcement Bar Options',
-        'WP Announcement Bar',
-        'manage_options',
-        'wpab-options',
-        'wpab_options_content'
-    );
-}
+
 
 // Create Options Page Content
 function wpab_options_content(){
@@ -65,7 +56,23 @@ function wpab_options_content(){
     echo ob_get_clean();
 }
 
-add_action('admin_menu', 'wpab_options_menu_link');
+
+
+// create custom plugin settings menu
+add_action('admin_menu', 'wpab_create_menu');
+
+// Create menu Link in admin
+function wpab_create_menu(){
+    add_menu_page(
+        'WP Announcement Bar Options',
+        'Champagne Bar',
+        'manage_options',
+        'wpab-options',
+        'wpab_options_content',
+        'dashicons-palmtree',
+    );
+}
+
 
 // Register Settings
 function wpab_register_settings(){
