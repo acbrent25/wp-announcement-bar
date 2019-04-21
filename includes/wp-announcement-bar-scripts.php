@@ -13,12 +13,14 @@ function wpab_add_scripts(){
         wp_enqueue_script('wpab-main-script', plugins_url() . '/wp-announcement-bar/js/main.js');
 
         // Get options for JS
-        $wpab_background_color  = $wpab_options['background_color'];
         $wpab_announcement_text = $wpab_options['announcement_text'];
+        $wpab_background_color  = $wpab_options['background_color'];
+        $wpab_font_color  = $wpab_options['font_color'];
 
         $wpab_settings = array(
-            'background_color'  => $wpab_background_color,
             'text'              => $wpab_announcement_text,
+            'background_color'  => $wpab_background_color,
+            'font_color'  => $wpab_font_color,
         );
 
         // sending the options to the js file
