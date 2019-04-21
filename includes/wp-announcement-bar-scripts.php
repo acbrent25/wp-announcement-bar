@@ -6,10 +6,13 @@ function wpab_add_scripts(){
     global $wpab_options;
 
     wp_enqueue_style('wpab-main-style', plugins_url() . '/wp-announcement-bar/css/style.css');
-    wp_enqueue_script('wpab-main-script', plugins_url() . '/wp-announcement-bar/js/main.js');
 
-    if($wpab_options['enable']){
+    // if announcemnt bar is enabled
+    if(isset($wpab_options['enable'])){
+        // Enqueue Script
+        wp_enqueue_script('wpab-main-script', plugins_url() . '/wp-announcement-bar/js/main.js');
 
+        // Get options for JS
         $wpab_background_color  = $wpab_options['background_color'];
         $wpab_announcement_text = $wpab_options['announcement_text'];
 

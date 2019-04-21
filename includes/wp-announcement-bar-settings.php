@@ -31,7 +31,7 @@ function wpab_options_content(){
                                 <label for="wpab_settings[enable]"><?php _e('Enable', 'wpab_domain'); ?></label>
                             </th>
                             <td>
-                                <input type="checkbox" name="wpab_settings[enable]" id="wpab_settings[enable]" value="1" <?php checked('1', $wpab_options['enable']); ?>>
+                                <input type="checkbox" name="wpab_settings[enable]" id="wpab_settings[enable]" value="1" <?php checked(isset($wpab_options['enable'])); ?>>
                             </td>
                         </tr>
                         <!-- Input -->

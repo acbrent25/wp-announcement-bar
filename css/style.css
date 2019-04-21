@@ -1,12 +1,5 @@
-#top-bar {
-    z-index: 2000;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #fff;
-    text-align: center;
-    width: 100%;
-    line-height: 3;
+#wpab-topbar {
+    z-index: 1;
 }
 
 .logged-in #top-bar {
