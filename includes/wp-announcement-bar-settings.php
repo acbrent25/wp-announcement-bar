@@ -18,49 +18,39 @@ function wpab_options_content(){
                     <tbody>
                         <!-- Enable -->
                         <tr>
-                            <th scope="row">
-                                <label for="wpab_settings[enable]"><?php _e('Enable', 'wpab_domain'); ?></label>
-                            </th>
                             <td>
+                            <label for="wpab_settings[enable]"><?php _e('Enable', 'wpab_domain'); ?></label>
                                 <input type="checkbox" name="wpab_settings[enable]" id="wpab_settings[enable]" value="1" <?php checked(isset($wpab_options['enable'])); ?>>
-                            </td>
+                            </td>                            
                         </tr>
                         <!-- Height -->
                         <tr>
-                            <th scope="row">
-                                <label for="wpab_settings[wpab_height]"><?php _e('Announcement Bar Height', 'wpab_domain'); ?></label>
-                            </th>
                             <td>
+                                <label for="wpab_settings[wpab_height]"><?php _e('Announcement Bar Height', 'wpab_domain'); ?></label>
                                 <input type="text" name="wpab_settings[wpab_height]" id="wpab_settings[wpab_height]" value="<?php echo isset($wpab_options['wpab_height']) ? $wpab_options['wpab_height'] : '' ; ?>" class="regular-text" placeholder="">
-                                <p class="description"> <?php _e('Enter line-height', 'wpab_domain'); ?> </p>
+                                <p class="description"> <?php _e('Enter line-height in px', 'wpab_domain'); ?> </p>
                             </td>
                         </tr>
                         <!-- Text -->
                         <tr>
-                            <th scope="row">
-                                <label for="wpab_settings[announcement_txt]"><?php _e('Announcement Bar Text', 'wpab_domain'); ?></label>
-                            </th>
                             <td>
+                                <label for="wpab_settings[announcement_txt]"><?php _e('Announcement Bar Text', 'wpab_domain'); ?></label>
                                 <input type="text" name="wpab_settings[announcement_txt]" id="wpab_settings[announcement_txt]" value="<?php echo isset($wpab_options['announcement_txt']) ? $wpab_options['announcement_txt'] : 'Announcement Bar' ; ?>" class="regular-text" placeholder="">
                                 <p class="description"> <?php _e('Enter the Text for Announcement Bar', 'wpab_domain'); ?> </p>
                             </td>
                         </tr>
                         <!-- Background Color -->
                         <tr>
-                            <th scope="row">
-                                <label for="wpab_settings[bg_color]"><?php _e('Background Color', 'wpab_domain'); ?></label>
-                            </th>
                             <td>
+                                <label for="wpab_settings[bg_color]"><?php _e('Background Color', 'wpab_domain'); ?></label>
                                 <input type="text" name="wpab_settings[bg_color]" id="wpab_settings[bg_color]" value="<?php echo isset($wpab_options['bg_color']) ? $wpab_options['bg_color'] : ''; ?>" class="regular-text" placeholder="">
                                 <p class="description"> <?php _e('Enter a Color or Hex Value #', 'wpab_domain'); ?> </p>
                             </td>
                         </tr>
                         <!-- Text Color -->
                         <tr>
-                            <th scope="row">
-                                <label for="wpab_settings[txt_color]"><?php _e('Text Color', 'wpab_domain'); ?></label>
-                            </th>
                             <td>
+                                <label for="wpab_settings[txt_color]"><?php _e('Text Color', 'wpab_domain'); ?></label>
                                 <input type="text" name="wpab_settings[txt_color]" id="wpab_settings[txt_color]" value="<?php echo isset($wpab_options['txt_color']) ? $wpab_options['txt_color'] : ''; ?>" class="regular-text" placeholder="">
                                 <p class="description"> <?php _e('Enter a Color or Hex Value #', 'wpab_domain'); ?> </p>
                             </td>
@@ -68,10 +58,8 @@ function wpab_options_content(){
 
                         <!-- Button ? -->
                         <tr>
-                            <th scope="row">
-                                <label for="wpab_settings[btn]"><?php _e('Button', 'wpab_domain'); ?></label>
-                            </th>
                             <td>
+                                <label for="wpab_settings[btn]"><?php _e('Button', 'wpab_domain'); ?></label>
                                 <input type="checkbox" name="wpab_settings[btn]" id="wpab_settings[btn]" value="1" <?php checked(isset($wpab_options['btn'])); ?>>
                                 <p class="description"> <?php _e('Check box to include button', 'wpab_domain'); ?> </p>
                             </td>
@@ -79,10 +67,8 @@ function wpab_options_content(){
 
                         <!-- Button Color -->
                         <tr>
-                            <th scope="row">
-                                <label for="wpab_settings[btn_color]"><?php _e('Button Color', 'wpab_domain'); ?></label>
-                            </th>
                             <td>
+                                <label for="wpab_settings[btn_color]"><?php _e('Button Color', 'wpab_domain'); ?></label>
                                 <input type="text" name="wpab_settings[btn_color]" id="wpab_settings[btn_color]" value="<?php echo isset($wpab_options['btn_color']) ? $wpab_options['btn_color'] : ''; ?>" class="regular-text" placeholder="">
                                 <p class="description"> <?php _e('Enter a Color or Hex Value #', 'wpab_domain'); ?> </p>
                             </td>
@@ -90,10 +76,8 @@ function wpab_options_content(){
 
                         <!-- Button Text -->
                         <tr>
-                            <th scope="row">
-                                <label for="wpab_settings[btn_txt]"><?php _e('Button Text', 'wpab_domain'); ?></label>
-                            </th>
                             <td>
+                                <label for="wpab_settings[btn_txt]"><?php _e('Button Text', 'wpab_domain'); ?></label>
                                 <input type="text" name="wpab_settings[btn_txt]" id="wpab_settings[btn_txt]" value="<?php echo isset($wpab_options['btn_txt']) ? $wpab_options['btn_txt'] : ''; ?>" class="regular-text" placeholder="">
                                 <p class="description"> <?php _e('Enter button text', 'wpab_domain'); ?> </p>
                             </td>
@@ -101,10 +85,8 @@ function wpab_options_content(){
 
                         <!-- Button Text Color -->
                         <tr>
-                            <th scope="row">
-                                <label for="wpab_settings[btn_txt_color]"><?php _e('Button Text Color', 'wpab_domain'); ?></label>
-                            </th>
                             <td>
+                                <label for="wpab_settings[btn_txt_color]"><?php _e('Button Text Color', 'wpab_domain'); ?></label>
                             <input type="text" name="wpab_settings[btn_txt_color]" id="wpab_settings[btn_txt_color]" value="<?php echo isset($wpab_options['btn_txt_color']) ? $wpab_options['btn_txt_color'] : ''; ?>" class="regular-text" placeholder="">
                                 <p class="description"> <?php _e('Enter a Color or Hex Value #', 'wpab_domain'); ?> </p>
                             </td>
@@ -112,10 +94,8 @@ function wpab_options_content(){
 
                         <!-- Button Link -->
                         <tr>
-                            <th scope="row">
-                                <label for="wpab_settings[btn_link]"><?php _e('Button Link', 'wpab_domain'); ?></label>
-                            </th>
                             <td>
+                            <label for="wpab_settings[btn_link]"><?php _e('Button Link', 'wpab_domain'); ?></label>
                             <input type="text" name="wpab_settings[btn_link]" id="wpab_settings[btn_link]" value="<?php echo isset($wpab_options['btn_link']) ? $wpab_options['btn_link'] : ''; ?>" class="regular-text" placeholder="https//mysite.com">
                                 <p class="description"> <?php _e('Enter full link including http(s)', 'wpab_domain'); ?> </p>
                             </td>
