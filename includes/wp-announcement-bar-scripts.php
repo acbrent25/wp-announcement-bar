@@ -10,7 +10,7 @@ function wpab_add_scripts(){
     // if announcemnt bar is enabled
     if(isset($wpab_options['enable'])){
         // Enqueue Script
-        wp_enqueue_script('wpab-main-script', plugins_url() . '/wp-announcement-bar/js/main.js');
+        wp_enqueue_script('wpab-main-script', plugins_url() . '/wp-announcement-bar/js/main.js', array('jquery'));
 
         // Get options for JS
         // Text Options
